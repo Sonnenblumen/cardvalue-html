@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>卡得万利商业保理</title>
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <!--framework7 css-->
+        <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+        <!--main css-->
+        <link rel="stylesheet" href="css/wechat.css">
+    </head>
+  <body>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="home" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content page-content-home">
+                <div class="home">
+                    <div class="header">
+                        <div class="mylimit">
+                            <div class="finance-scan"><img src="<c:url value='/resources/newm/images/scan.png'/>"/> </div>
+                            <div class="finance-mail"><img src="<c:url value='/resources/newm/images/mail.png'/>"/> </div>
+                            <div class="finance"><span>融资</span></div>
+                            <div class="circle-new">
+                                <!--手机画圆-->
+                                <div id="radius-paint"></div>
+
+                                <div class="limit-txt">
+                                    <div class="limit-title-new">我的额度</div>
+                                    <div class="limit-num-new">
+                                        <span class="icon-rmb-new">¥</span><span class="timer count-title" id="count-number" data-to="80000" data-speed="1500"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-more"><span class="badge home-limit-badge-dot"></span><a class="button button-round up-limit-new" href="upgrade-limit.html">提升额度</a></div>
+                        </div>
+                    </div>
+
+                    <div id="stepBar" class="ui-stepBar-wrap">
+                        <div class="ui-stepBar">
+                            <div class="ui-stepProcess"></div>
+                        </div>
+                        <div class="ui-stepInfo-wrap">
+                            <table class="ui-stepLayout" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="ui-stepInfo">
+                                        <a class="ui-stepSequence"></a>
+                                        <a class="ui-stepSequence-point"></a>
+                                    </td>
+                                    <td class="ui-stepInfo">
+                                        <a class="ui-stepSequence"></a>
+                                        <a class="ui-stepSequence-point" style=""></a>
+                                    </td>
+                                    <td class="ui-stepInfo">
+                                        <a class="ui-stepSequence"></a>
+                                        <a class="ui-stepSequence-point" style=""></a>
+                                    </td>
+                                    <td class="ui-stepInfo">
+                                        <a class="ui-stepSequence"></a>
+                                        <a class="ui-stepSequence-point" style=""></a>
+                                    </td>
+                                    <td class="ui-stepInfo">
+                                        <a class="ui-stepSequence"></a>
+                                        <a class="ui-stepSequence-point" style=""></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="ui-stepInfo-words" style="position: absolute; width: 100%;">
+                                <p class="ui-stepName ui-stepNameColor">提升额度</p>
+                                <p class="ui-stepName ui-stepNameColor">提交申请</p>
+                                <p class="ui-stepName ui-stepNameColor" style="width: 17%;">审核中</p>
+                                <p class="ui-stepName ui-stepNameColor">提现确认</p>
+                                <p class="ui-stepName ui-stepNameColor">已完成</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float_clear div-height"></div>
+
+                    <div class="home-content-new">
+                        <div class="row home-row-new">
+                            <a class="col-33 home-block-new">
+                                <div class="index-icon-new myapply-new"><span class="badge home-badge-dot"></span></div>
+                                <p class="block-txt-new">立即提现</p>
+                            </a>
+                            <a class="col-33 home-block-new">
+                                <div class="index-icon-new bill-list-new"><span class="badge home-badge-dot"></span></div>
+                                <p class="block-txt-new">对账单</p>
+                            </a>
+                            <a class="col-33 home-block-new">
+                                <div class="index-icon-new add-file-new"><span class="badge home-badge-dot"></span></div>
+                                <p class="block-txt-new">补件</p>
+                            </a>
+                        </div>
+                        <div class="row home-row">
+                            <a class="col-33 home-block-new">
+                                <div class="index-icon-new my-apply-new"><span class="badge home-badge-dot"></span></div>
+                                <p class="block-txt-new">敬请期待</p>
+                            </a>
+                            <a class="col-33 home-block-new">
+                                <div class="index-icon-new expecting-new"></div>
+                                <p class="block-txt-new">敬请期待</p>
+                            </a>
+                        </div>
+                        <div class="text-line-height"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="<c:url value='/new/m/shop'/>" class="tab-link active">
+                    <i class="icon money-icon"><span class="badge bg-red">1</span></i>
+                    <span class="tabbar-label">融资</span>
+                </a>
+                <a href="<c:url value='/new/m/account'/>" class="tab-link">
+                    <i class="icon account-icon"></i>
+                    <span class="tabbar-label">账户</span>
+                </a>
+                <a href="<c:url value='/new/m/more'/>" class="tab-link">
+                    <i class="icon more-icon"></i>
+                    <span class="tabbar-label">更多</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/wechat.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/stepBar.js"></script>
+    <script type="text/javascript" src="js/accountNumber.js"></script>
+    <script language="javascript" type="text/javascript">
+        //进度条
+//        var interval = 1000;
+//        function ShowCountDown(year,month,day,divname)
+//        {
+//            var now = new Date();
+//            var endDate = new Date(year, month-1, day);
+//            var leftTime=endDate.getTime()-now.getTime();
+//            var leftsecond = parseInt(leftTime/1000);
+//            //var day1=parseInt(leftsecond/(24*60*60*6));
+//            var day1=Math.floor(leftsecond/(60*60*24));
+//            var hour=Math.floor((leftsecond-day1*24*60*60)/3600);
+//            var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60);
+//            var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
+//        } ;
+//        window.setInterval(function(){ShowCountDown(2015,6,10,'surplus-time');}, interval);
+        $(function(){
+            stepBar.init("stepBar", {
+                step : 3,//截止到第几步
+                change : true,
+                animation : true
+            });
+        });
+        var screenHeight = $(document.body).height();
+        var screenWidth = $(document.body).width();
+        //alert(screenHeight);
+        if(screenHeight>500 && screenWidth<767){
+            $('.text-line-height').removeClass('text-line-height');
+        };
+        //判断屏幕宽度，确定画的圈的大小
+        if (screenWidth < 767){
+            $('#radius-paint').html('<canvas id="myCanvas" width="206" height="206"></canvas>');
+        }
+        else{
+            $('#radius-paint').html('<canvas id="myCanvas" width="308" height="308"></canvas>');
+        };
+        //画圆
+        var canvas = document.getElementById('myCanvas'),width = canvas.width,height = canvas.height,ctx = canvas.getContext('2d');
+        var step,startAngle,endAngle,add=Math.PI*2/100;
+        ctx.shadowOffsetX = 0; // 设置水平位移
+        ctx.shadowOffsetY = 0; // 设置垂直位移
+        ctx.shadowBlur = 10; // 设置模糊度
+        ctx.lineWidth = 1.0; //线条宽度
+        counterClockwise = false;
+        var x;
+        var y;
+        var radius;
+        var animation_interval = 15,n = 100;//速度和步数
+        var varName;
+
+        function actiondo(){
+            step=1;
+            startAngle=90;//画圆开始角度
+            ctx.strokeStyle = "#ffffff";//线条颜色
+            //圆心位置
+            x = width/2;
+            y = height/2;
+            radius = width/2-5;//半径
+            varName= setInterval(animation, animation_interval);
+//            alert("sss")
+        }
+        var animation = function () {
+            if (step <= n) {
+                endAngle = startAngle + add ;
+                drawArc(startAngle-0.01, endAngle);
+                startAngle = endAngle;
+                step++;
+            } else {
+                clearInterval(varName);
+            }
+
+        };
+        function drawArc(s, e) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, s, e, counterClockwise);
+            ctx.lineWidth = 5.0;//线条宽度
+            ctx.stroke();
+        }
+        window.onload=actiondo();
+    </script> 
+  </body>
+</html>

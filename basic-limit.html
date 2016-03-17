@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left"><a href="upgrade-limit.html" class="back link"> <i class="icon icon-back card-back"></i></a></div>
+                <div class="center sliding">基础额度</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div class="content-block-title">
+                        <span class="glyphicon glyphicon-list margin-r05" aria-hidden="true"></span>必填信息
+                    </div>
+                    <div class="list-block uploadfile-block">
+                        <ul>
+                            <li>
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title label">是否有营业执照</div>
+                                  <div class="item-input">
+                                    <select>
+                                      <option value="有">有</option>
+                                      <option value="无">无</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title label">所属行业</div>
+                                  <div class="item-input">
+                                    <select>
+                                      <option value="请选择">请选择</option>
+                                      <option value="零售类">零售类</option>
+                                      <option value="餐饮类">餐饮类</option>
+                                      <option value="批发类">批发类</option>
+                                      <option value="娱乐类">娱乐类</option>
+                                      <option value="其他类">其他类</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">实体门店数</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="4家以上">4家以上</option>
+                                            <option value="2~4家">2~4家</option>
+                                            <option value="1家">1家</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">所在城市</div>
+                                    <div class="item-input">
+                                        <div class="open-popup" data-popup=".popup-selectCity">请选择</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">从事本行业年限</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="3年以上">3年以上</option>
+                                            <option value="1~3年">1~3年</option>
+                                            <option value="1年以下">1年以下</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-block-title">
+                        <span class="glyphicon glyphicon-list-alt margin-r05" aria-hidden="true"></span>选填信息
+                    </div>
+                    <div class="list-block uploadfile-block">
+                        <ul>
+                            <li>
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title label">POS装机时间</div>
+                                  <div class="item-input">
+                                    <select>
+                                      <option value="请选择">请选择</option>
+                                      <option value="">已安装3个月以上</option>
+                                      <option value="">已安装，不足3个月</option>
+                                      <option value="">未安装，计划新装POS</option>
+                                      <option value="">未安装，不计划安装POS</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item-content">
+                                <div class="item-inner">
+                                  <div class="item-title label">营业面积(m²)</div>
+                                  <div class="item-input">
+                                    <select>
+                                      <option value="请选择">请选择</option>
+                                      <option value="">>500</option>
+                                      <option value="">151-500</option>
+                                      <option value="">51-150</option>
+                                      <option value="">31-50</option>
+                                      <option value="">0-30</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">学历</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="">硕士及以上</option>
+                                            <option value="">本科</option>
+                                            <option value="">大专</option>
+                                            <option value="">高中/中专</option>
+                                            <option value="">初中及以下</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">婚否</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="">已婚</option>
+                                            <option value="">未婚</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">户口所在地</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="">本地</option>
+                                            <option value="">外地</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">门店物业性质</div>
+                                    <div class="item-input">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="">自置物业</option>
+                                            <option value="">租借</option>
+                                            <option value="">其它</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 选择城市popup页面 -->
+<div class="popup popup-selectCity">
+    <p class="padding-rl15">
+        <a href="#" class="close-popup">返回</a>
+        <a class="float_r" href="basic-limit.html">保存</a>
+    </p>
+    <div class="page-content contacts-content">
+        <div class="list-block contacts-block">
+            <div class="list-group">
+              <ul>
+                <li class="list-group-title">河南省</li>
+                <li>
+                  <label class="label-radio item-content">
+                    <input type="radio" name="city" value="" checked="checked">
+                    <div class="item-inner">
+                      <div class="item-title">郑州市</div>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                    <input type="radio" name="city" value="">
+                    <div class="item-inner">
+                      <div class="item-title">平顶山市</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <ul>
+                <li class="list-group-title">江苏省</li>
+                <li>
+                  <label class="label-radio item-content">
+                    <input type="radio" name="city" value="">
+                    <div class="item-inner">
+                      <div class="item-title">苏州市</div>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-radio item-content">
+                    <input type="radio" name="city" value="">
+                    <div class="item-inner">
+                      <div class="item-title">扬州市</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/wechat.js"></script>
+</body>
+</html>

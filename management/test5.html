@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <title>www.zishu.cn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        /*zishu.cn*/
+        *{ margin:0; padding:0; font-size:12px; font-family:Verdana, "宋体", Arial; line-height:1.8; list-style:none;}
+        #nav{ margin:50px; border:1px dashed #FF3300; background:#FFFFCC; padding:50px;}
+        a:link,a:visited{color:#FF6600;text-decoration: none;}
+        a:hover,a:active{ color:#FF0000;}
+        #nav a span{overflow:hidden; border-top:6px solid #FFFFCC;border-left:6px solid #FFFFCC;border-bottom:6px solid #FFFFCC; height:0px; width:0px; margin:2px 2px 0 -10px; position:absolute}
+        #nav a:hover span{background:#CC3300;border-left:6px solid #FF3300;border-top:6px solid #FFFFCC;border-bottom:6px solid #FFFFCC;overflow:hidden; float:left;}
+    </style>
+</head>
+<body>
+<div id="nav">
+    <h1>应用的一个实例</h1>
+    <ul>
+        <li><a href="http://www.baidu.com" target="_blank"><span></span>子鼠首页</a></li>
+        <li><a href="http://www.zishu.cn" target="_blank"><span></span>给我留言</a></li>
+        <li><a href="http://www.zishu.cn" target="_blank"><span></span>友情链接</a></li>
+        <li><a href="http://www.zishu.cn" target="_blank"><span></span>我的日志</a></li>
+        <li><a href="http://www.zishu.cn" target="_blank"><span></span>音乐英语</a></li>
+    </ul>
+</div>
+
+<p>small:dddd</p>
+<p>ddd</p>
+<p>ddd</p>
+<p>ddd</p>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+    $('#nav').click(function(){
+        jQuery('p').css('display','none');
+    })
+
+</script>
+
+</body>
+</html>

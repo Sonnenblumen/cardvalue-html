@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar login-title">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="close-img"><img src="<c:url value='/resources/newm/images/icon/left-arror.png'/>"></a></div>
+                <div class="center sliding login-title-word">我的申请</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page my-apply-page-new">
+                <!-- Scrollable page content-->
+                <div class="page-content upload-page">
+                    <div class="list-block media-list my-apply-pages-new">
+                        <!--当有记录时-->
+                        <ul class="float_clear">
+                            <li class="border-bottom my-apply-min-height">
+                                <a class="item-link item-content padding0 my-apply-content-new">
+                                    <div class="item-inners">
+                                        <div class="item-title-row none-background account-font6 padding-l4">
+                                            <div class="item-title my-account-font1">
+                                                <div>20150825申请</div>
+                                                <div class="my-account-font2">最新状态：<span class="my-account-font3">申请中</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-title my-apply-buttons"><a class="button account-button my-account-button-new">填写申请</a></div>
+                            </li>
+                            </li>
+                            <li class="border-bottom my-apply-min-height">
+                                <a class="item-link item-content padding0 my-apply-content-new">
+                                    <div class="item-inners">
+                                        <div class="item-title-row none-background account-font6 padding-l4">
+                                            <div class="item-title my-account-font1">
+                                                <div>20150825申请</div>
+                                                <div class="my-account-font2">最新状态：<span class="my-account-font3">申请中</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-title my-apply-buttons"><a class="button account-button my-account-button-new">查看申请</a></div>
+                            </li>
+                            <li class="border-bottom my-apply-min-height">
+                                <a class="item-link item-content padding0 my-apply-content-new">
+                                    <div class="item-inners">
+                                        <div class="item-title-row none-background account-font6 padding-l4">
+                                            <div class="item-title my-account-font1">
+                                                <div>20150825申请</div>
+                                                <div class="my-account-font2">最新状态：<span class="my-account-font3">申请中</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-title my-apply-buttons"><a class="button account-button my-account-button-new">补充资料</a></div>
+                            </li>
+                            <li class="border-bottom my-apply-min-height">
+                                <a class="item-link item-content padding0 my-apply-content-new">
+                                    <div class="item-inners">
+                                        <div class="item-title-row none-background account-font6 padding-l4">
+                                            <div class="item-title my-account-font1">
+                                                <div>20150825申请</div>
+                                                <div class="my-account-font2">最新状态：<span class="my-account-font3">申请中</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-title my-apply-buttons"><a class="button account-button my-account-button-new">查看账单</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-account-bottom-new">
+            <div>
+                <div class="my-apply-check-box1">
+                    <input id="my-apply-agree-terms" type="checkbox" checked />
+                </div>
+                <div id="my-apply-agree-terms-font">
+                    <label for="my-apply-agree-terms">同意<a class="open-popup" data-popup=".popup-service" href="#">卡得万利商业保理协议书</a></label>
+                </div>
+            </div>
+            <div class="float_clear margin-b10">
+                <div class="my-apply-check-box1">
+                    <input id="my-apply-agree-terms1" type="checkbox" checked />
+                </div>
+                <div id="my-apply-agree-terms-font1">
+                    <label for="my-apply-agree-terms1">同意作为保证人承担连带保证责任</label>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <button class="button button-big account-button">创建申请</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-service">
+    <div class="content-block">
+        <p><a href="#" class="close-popup">关闭</a></p>
+        <p>卡得万利商业保理协议书</p>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/wechat.js"></script>
+</body>
+</html>

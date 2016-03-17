@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/wechat.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+    $('#myModal').modal('show');
+
+    $(function(){
+        var tiemer = "";
+        var time = 3000;//每次点击三秒后才能再次点击
+        var fun = function bClick(){
+            //alert("执行方法");
+            $('#idevent').addClass('idevent-rotate');
+            //在3秒内再按键无效
+            $("#idevent").unbind("click");
+            tiemer = setTimeout(function(){$('#myModal').modal('show');},time);
+        };
+        $("#idevent").click(fun);
+    })
+
+</script>
+
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <!--<div class="navbar">-->
+            <!--<div class="navbar-inner">-->
+                <!--<div class="left"><a href="#" class="back link"> <i class="icon icon-back card-back"></i></a></div>-->
+                <!--<div class="center sliding">隐私说明</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page" style="background-color: #ffffff;">
+                <!-- Scrollable page content-->
+                <div class="page-content padding0">
+                    <div class="container-fluid padding0 align-middle back-ground-col">
+                        <div class="nav-body nav-body-bac">
+                            <div class="shovel"><img src="images/chanzi.png" id="idevent"></div>
+                            <div class="nav-buttom">
+                                <button type="button" class="btn btn-check-result btn-check-color btn-shadow" data-dismiss="modal">
+                                    查看获奖记录
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 模态框（Modal） -->
+                        <div class="modal fade modal-body-top" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false" data-keyboard="false">
+                            <div class="modal-dialog modal-dialog-align">
+                                <div class="modal-content modal-black-back">
+                                    <div class="modal-body modal-body-back">
+                                        <div class="modal-font">10000积分</div>
+                                    </div>
+                                    <div class="modal-footer modal-footer-pos">
+                                        <button type="button" class="btn btn-check-result modal-footer-btn" data-dismiss="modal">
+                                            立即兑换
+                                        </button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

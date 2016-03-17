@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar login-title">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="close-img"><img src="<c:url value='/resources/newm/images/icon/left-arror.png'/>"></a></div>
+                <div class="center sliding login-title-word">个人信息</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div>
+                        <div class="list-block uploadfile-block my-account-padding">
+                            <ul>
+                                <li class="border-bottom border-tops">
+                                    <div class="item-content">
+                                        <div class="item-media"><span class="info-title">姓名：</span></div>
+                                        <div class="item-inners questionCon">
+                                            <span class="info-color">张三</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><span class="info-title">手机号：</span></div>
+                                        <div class="item-inners questionCon">
+                                            <span class="info-color">123456789012345678</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="border-bottom border-tops">
+                                    <div class="item-content">
+                                        <div class="item-media"><span class="info-title">身份证号：</span></div>
+                                        <div class="item-inners questionCon">
+                                            <span class="info-color">123456789012345678</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="border-bottom">
+                                    <a href="changeCode.html" class="item-link item-content">
+                                        <div class="item-media"><span class="info-title">修改密码：</span></div>
+                                        <div class="item-inner questionCon">
+                                            <div class="item-title-row">
+                                                <div class="item-title info-color"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my-account-but">
+                            <a class="my-account-buts" href="#">退出账号</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="myshop.html" class="tab-link">
+                    <i class="icon money-icon"><span class="badge bg-red">1</span></i>
+                    <span class="tabbar-label">融资</span>
+                </a>
+                <a href="myaccount.html" class="tab-link">
+                    <i class="icon account-icon">
+                    </i>
+                    <span class="tabbar-label">账户</span>
+                </a>
+                <a href="more_new.html" class="tab-link active">
+                    <i class="icon more-icon"></i>
+                    <span class="tabbar-label">更多</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/wechat.js"></script>
+</body>
+</html>

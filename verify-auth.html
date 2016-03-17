@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left"><a href="myshop.html" class="back link"> <i class="icon icon-back card-back"></i></a></div>
+                <div class="center sliding">身份验证</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div class="list-block">
+                        <ul>
+                            <li class="item-content verify-title">
+                                <div class="item-inner">
+                                    <div>1. 在2015年5月21日下午14:41分的刷卡消费金额是？</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="verify-answer">
+                            <li>
+                                <label class="label-radio item-content">
+                                    <!-- Checked by default -->
+                                    <input type="radio" name="time" value="2111.02" checked="checked">
+                                    <div class="item-inner">
+                                        <div class="item-title">2111.02</div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="label-radio item-content">
+                                    <!-- Checked by default -->
+                                    <input type="radio" name="time" value="2111.30">
+                                    <div class="item-inner">
+                                        <div class="item-title">2111.30</div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="label-radio item-content">
+                                    <input type="radio" name="time" value="2111.50">
+                                    <div class="item-inner">
+                                        <div class="item-title">2111.50</div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-block">
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div>2. 在2015年5月21日下午14:41分的刷卡消费金额是？</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="verify-answer">
+                            <li>
+                                <label class="label-radio item-content">
+                                    <!-- Checked by default -->
+                                    <input type="radio" name="my-radio" checked="checked">
+                                    <div class="item-inner">
+                                        <div class="item-title">5444.02</div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="label-radio item-content">
+                                    <input type="radio" name="my-radio">
+                                    <div class="item-inner">
+                                        <div class="item-title">2555.30</div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="label-radio item-content">
+                                    <input type="radio" name="my-radio">
+                                    <div class="item-inner">
+                                        <div class="item-title">2555.90</div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="padding-rl15">
+                        <p>温馨提示：请在验证信息前准备好小票材料，连续验证3次错误，将无法通过审核。</p>
+                        <a class="button button-fill button-big" href="upload-file.html">立即验证</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/wechat.js"></script>
+</body>
+</html>

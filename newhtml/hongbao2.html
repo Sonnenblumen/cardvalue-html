@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+    <link rel="stylesheet" href="css/newHomepage.css">
+
+
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main login-background">
+        <div class="home-page-backs displaynone">
+            <div></div>
+        </div>
+        <!-- Top Navbar-->
+        <div class="navbar login-title">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="close-img"><img src="images/icon/left-arror.png"></a></div>
+                <div class="center sliding login-title-word hong-bao-top-center">我的红包</div>
+                <div class="right"><span class="hongbao-top-select">选择(2)</span><a href="#" class="help"><img src="images/icon/help.png"></a></div>
+            </div>
+
+            <div class="navbar-part2">
+                <div class="float_l hongbao-numbers">
+                    <div class="icons hongbao-button-content" id="icons">
+                        <div class="float_l hongbao-button-font1 hongbao-button-font2">
+                            <span>优惠券</span>
+                        </div>
+                        <div class="float_l hongbao-button-font1">
+                            <span>现金券</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through" id="pages-contents">
+            <!-- Page, data-page contains page name-->
+            <div class="hongbao-message-box-content displaynone">
+                <div class="hongbao-message-part1">卡得万利商业保理</div>
+                <div class="hongbao-message-font1">请输入您的真实姓名和银行卡号！</div>
+                <div class="hongbao-message-font2">注：系统默认带出您已填写的信息，如果发生变更您可以进行修改。</div>
+                <div class="hongbao-message-part2"><input class="hongbao-message-font3" placeholder="请输入姓名"></div>
+                <div class="hongbao-message-part2"><input class="hongbao-message-font3" placeholder="请输入银行卡号"></div>
+                <div class="hongbao-message-part3"><button class="btn hongbao-message-btn1">确定</button><button class="btn hongbao-message-btn1">取消</button></div>
+            </div>
+            <div class="m-slider">
+                <ul class="cnt" id="slider">
+                    <li class="cnt-li" style="background-color: #f1f1f1;" id="homePageScroll1">
+                        <div class="slider-page1-content">
+                                <div class="bride bride-hongbao">
+                                    <div class="hongbao-include"><span class="glyphicon glyphicon-ok-sign hongbao-include-font1"></span></div>
+                                    <div class="hongbao-font1"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                    <div class="bride-font5"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4">未使用</span></div>
+                                </div>
+                                <div class="bride">
+                                    <div class="hongbao-include"><span class="glyphicon glyphicon-ok-sign hongbao-include-font2"></span></div>
+                                    <div class="hongbao-font1"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                    <div class="bride-font5"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4">未使用</span></div>
+                                </div>
+                                <div class="bride bride-hongbao-youhuiquan-used">
+                                    <div class="hongbao-include"><span class="glyphicon glyphicon-ok-sign hongbao-include-used"></span></div>
+                                    <div class="hongbao-font1 hongbao-used"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                    <div class="bride-font5"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4 hongbao-used">已使用</span></div>
+                                </div>
+                        </div>
+                    </li>
+
+
+                    <li class="cnt-li" style="background-color: #f1f1f1;" id="homePageScroll2">
+                        <div class="slider-page1-content">
+                            <div class="bride bride-hongbao-cash-using">
+                                <div class="hongbao-include hongbao-message-box"><span class="glyphicon glyphicon-ok-sign hongbao-include-font1"></span></div>
+                                <div class="hongbao-font1 hongbao-message-box"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                <div class="bride-font5 hongbao-message-box"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4">未使用</span></div>
+                            </div>
+                            <div class="bride bride-hongbao-cash">
+                                <div class="hongbao-include"><span class="glyphicon glyphicon-ok-sign hongbao-include-font2"></span></div>
+                                <div class="hongbao-font1"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                <div class="bride-font5"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4">未使用</span></div>
+                            </div>
+                            <div class="bride bride-hongbao-cash-used">
+                                <div class="hongbao-include"><span class="glyphicon glyphicon-ok-sign hongbao-include-used"></span></div>
+                                <div class="hongbao-font1 hongbao-used"><span class="bride-font2">￥</span><span class="bride-font3">10.00</span></div>
+                                <div class="bride-font5"><span class="bride-font6">新手注册得10元红包</span><span class="hongbao-font4 hongbao-used">已使用</span></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/wechat.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script type="text/javascript">
+    $('#icons .hongbao-button-font1').click(function(){
+        $(this).addClass('hongbao-button-font2').siblings().removeClass('hongbao-button-font2');
+    });
+
+    var scrollCurrent = 0;
+    var contentHeight = $('.slider-page1-content').height();
+
+    var screenWidth = $(window).width();
+    var clickNumber = 0;
+    var ccds;
+    var i =0;
+    var $btn = $('.hongbao-button-font1');
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ), showLeft = document.getElementById( 'showLeft'), pagesidden = document.getElementById( 'pages-contents');
+    var $back = document.getElementById('back-ttps');
+    var $sliderLi = document.getElementById('slider');
+    var closeImgClickNum = 0;
+
+    $btn.each(function(index) {
+        $(this).click(function(){
+            document.getElementById('slider').style.left = -screenWidth*index + 'px';
+            $(this).addClass('hongbao-button-font2').siblings().removeClass('hongbao-button-font2');
+            clickNumber = index;
+        });
+    });
+
+    $(function() {
+        $("#slider li").swipe( {
+            swipeStatus:function(event, phase, direction, distance, duration,fingerCount) {
+                var totalLi = $('#slider').children().length;
+                var currentLi = $(this).index() +1;
+                var screenNumbers = $(this).index();
+                if(phase == 'move' && direction == 'left' && currentLi < totalLi){
+                    $('#slider').css('left',- screenNumbers*screenWidth - distance + 'px')
+                }
+                else if(phase == 'move' && direction == 'right' && currentLi > 1){
+                    $('#slider').css('left',- screenNumbers*screenWidth + distance + 'px')
+                }
+//                向左滑动
+                else if(phase == 'end' && direction == 'left' && currentLi < totalLi && distance > 100){
+                    $('#slider').css('left',- currentLi*screenWidth + 'px')
+                    $('#icons .hongbao-button-font1').eq(currentLi).addClass('hongbao-button-font2').siblings().removeClass('hongbao-button-font2');
+                }
+//                向右滑动
+                else if(phase == 'end' && direction == 'right' && currentLi > 1 && distance > 100){
+                    $('#slider').css('left',- (screenNumbers-1)*screenWidth + 'px')
+                    $('#icons .hongbao-button-font1').eq(screenNumbers-1).addClass('hongbao-button-font2').siblings().removeClass('hongbao-button-font2');
+                }
+                else if(distance <= 100){
+                    $('#slider').css('left',- screenNumbers*screenWidth + 'px')
+                };
+            }
+        });
+
+        var cntLength = $('.cnt').children('li').length;
+        var cntWidth = cntLength * 100;
+        var cntLiWidth = 100 / cntLength;
+        var cntScrollWidth = cntLength * 100 / 3.5;
+        $('.m-slider .cnt').css('width', cntWidth + '%');
+        $('.m-slider .cnt li.cnt-li').css('width', cntLiWidth + '%');
+        $('.home-page-button-content2').css('width', cntScrollWidth + '%');
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar login-title">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="close-img"><img src="images/icon/left-arror.png"> </a></div>
+                <div class="center sliding login-title-word">征信报告授权</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="login" class="page">
+
+                <!-- Scrollable page content-->
+                <div class="page-content">
+
+                    <div class="bind-button">
+                        <div class="float_l bind-button-font1 button-active credit-button1">
+                            <button>有征信报告</button>
+                        </div>
+                        <div class="float_l bind-button-font2 credit-button2">
+                            <button>无征信报告</button>
+                        </div>
+                    </div>
+
+                    <div class="bind-part1 credit-part1">
+
+                        <div class="content-block login-new">
+                            <div class="list-block register-home credit-report-part1">
+                                <ul>
+                                    <li class="item-content apply-bottom">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/user.png"></span>
+                                        </div>
+                                        <div class="item-inners">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="征信中心登录名">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content apply-bottom2">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/pinCode.png"></span>
+                                        </div>
+                                        <div class="item-inners">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="征信中心密码">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content apply-bottom2 credit-report-content">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/key.png"></span>
+                                        </div>
+                                        <div class="item-inners credit-report-font1">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="请输入图片验证码">
+                                            </div>
+                                        </div>
+                                        <div class="item-media credit-report-pics">
+                                            <span class="icon username_icon"><img class="credit-pics" src="images/input-code.png"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-block identify-block">
+                                <ul>
+                                    <li class="item-content apply-bottom">
+                                        <div class="item-mediav identify-card">
+                                            <span class="icon username_icon"></span>
+                                        </div>
+                                        <div class="item-inners">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="身份验证码">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-rl15 margin-t-5">
+                            <div class="row">
+                                <div class="float_r"><a class="credit-font4">如何授权？</a></div>
+                            </div>
+
+                            <div class="bind-number-new2">
+                                <a class="button button-big button-fill apply-button" href="#">提交</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bind-part2 credit-part2 displaynone">
+
+                        <div class="content-block login-new">
+                            <div class="list-block media-list myaccount">
+                                <ul>
+                                    <li>
+                                        <div href="#" class="item-content">
+                                            <div class="item-inner">
+                                                <div class="pic-thumbnail-new">
+                                                    <div class="row">
+                                                        <div class="thumbnail-inner thumbnail-back">
+                                                            <img class="thumbnailimg thumbnailimg-none" id="change-pic" src="images/noPic.png" alt="" height="44"/>
+                                                        </div>
+                                                        <div class="thumbnail-inner">
+                                                            <img class="thumbnailimg" id="change-pic1" src="images/idcard_front.jpg" alt=""/>
+                                                            <a class="delete-btn"><img class="delete-img" src="images/delete.png" /></a>
+                                                        </div>
+                                                        <div class="thumbnail-inner">
+                                                            <img class="thumbnailimg-add" src="images/add-pic.png" alt=""/>
+                                                            <input class="upload-btn" type="file" name='pictureFile'/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="upload-home-font2">示例图片</div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-rl15 margin-t-5">
+                            <div class="bind-font1">
+                                您需要去当地人民银行申请个人征信报告，此申请可能需要耗费较长时间
+                            </div>
+                            <div class="bind-number-new2">
+                                <a class="button button-big button-fill apply-button" href="#">提交</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/wechat.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+
+<script type="text/javascript">
+
+    $('.credit-button1').click(function(){
+        $('.credit-part2').addClass('displaynone');
+        $('.credit-part1').removeClass('displaynone');
+        $('.credit-button1').addClass('button-active');
+        $('.credit-button2').removeClass('button-active');
+    });
+    $('.credit-button2').click(function(){
+        $('.credit-part1').addClass('displaynone');
+        $('.credit-part2').removeClass('displaynone');
+        $('.credit-button2').addClass('button-active');
+        $('.credit-button1').removeClass('button-active');
+    });
+</script>
+</body>
+</html>

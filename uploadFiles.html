@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages">
+            <!-- Page, data-page contains page name-->
+            <div data-page="upload" class="page navbar-fixed">
+                <!-- Top Navbar-->
+                <div class="navbar login-title">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="#" class="close-img"><img src="images/icon/left-arror.png"></a></div>
+                        <div class="center">
+                            <!-- Tabs, tabs wrapper -->
+                            <div class="content-block">
+                                <!-- tabs控制面板 -->
+                                <div class="buttons-row new-apply-new">
+                                    <!-- 关联到第一个tab, 默认激活 -->
+                                    <a href="#tab1" class="tab-link button tab-but active">申请资料</a>
+                                    <!-- 关联到第二个tab -->
+                                    <a href="#tab2" class="tab-link button tab-but">上传图片</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right"><span class="uploadFiles-font1">提交</span></div>
+                    </div>
+                </div>
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <!-- Tabs, 标签内容区容器 -->
+                    <div class="tabs">
+                        <!-- Tab 1, 默认激活 -->
+                        <div id="tab1" class="tab active">
+                            <form id="myform" method="post">
+                                <div class="content-block-title">
+                                    <span class="glyphicon glyphicon-credit-card wechat-icon-credit-card margin-r05" aria-hidden="true"></span>保理融资需求
+                                </div>
+                                <div class="list-block uploadfile-block-new">
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">意向融资金额(元)</div>
+                                                    <div class="item-input">
+                                                        <input type="text" id="loanAmount" name="loanAmount" value="5000" placeholder="融资范围为5000~">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">意向融资期限(月)</div>
+                                                    <div class="item-input">
+                                                        <select name="planFundTerm" id="planFundTerm">
+                                                            <option value="">请选择</option>
+                                                            <option value="3" selected>3</option>
+                                                            <option value="6" >6</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">用途</div>
+                                                <div class="item-input">
+                                                    <select name="purposeFactor" id="purposeFactor">
+                                                        <option value="">请选择</option>
+                                                        <option value="2" >店铺装修</option>
+                                                        <option value="3" >购置设备</option>
+                                                        <option value="4" >购买库存</option>
+                                                        <option value="5" >工资账单</option>
+                                                        <option value="6" >广告宣传</option>
+                                                        <option value="7" >其它</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content-block-title">
+                                    <span class="glyphicon glyphicon-list-alt wechat-icon-list-alt margin-r05" aria-hidden="true"></span>法定代表人基本信息
+                                </div>
+                                <div class="list-block uploadfile-block-new">
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">身份证号码</div>
+                                                    <div class="item-input">
+                                                        <input type="text"  name="ownerSSN" id="ownerSSN" value="420923198912120122"  placeholder="例如：511702198606266283">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">固定电话</div>
+                                                    <div class="item-input">
+                                                        <input type="text"  name="ownerPhone" id="ownerPhone" value="021-12345678" placeholder="例如：021-60870131">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">现址居住年限</div>
+                                                    <div class="item-input">
+                                                        <input type="text"  name="ownerResidenceYears" id="ownerResidenceYears" value="1" placeholder="例如：1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">电子邮箱</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="ownerEmail" id="ownerEmail" value="aa@163.com" placeholder="例如：zhangsan@163.com">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">住所地址</div>
+
+                                                    <div class="item-input">
+                                                        <input type="text" name="ownerAddress" id="ownerAddress"  value="zzzz" placeholder="例如：北张家浜路88号">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content-block-title">
+                                    <span class="glyphicon glyphicon-list wechat-icon-list margin-r05" aria-hidden="true"></span>个人详细信息
+                                </div>
+                                <div class="list-block uploadfile-block-new">
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">股权百分比</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="ownerPercentage2" id="ownerPercentage2" value="1" placeholder="例如：50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">住宅类别</div>
+                                                    <div class="item-input">
+                                                        <select  name="apartmentType" id="apartmentType">
+                                                            <option value="">请选择</option>
+                                                            <option value="自置" selected>自置</option>
+                                                            <option value="按揭" >按揭</option>
+                                                            <option value="租借" >租借</option>
+                                                            <option value="父母住宅" >父母住宅</option>
+                                                            <option value="其它" >其它</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">婚姻状况</div>
+                                                    <div class="item-input">
+                                                        <select name="opratorMaritalStatus" id="opratorMaritalStatus">
+                                                            <option value="">请选择</option>
+                                                            <option value="已婚" >已婚</option>
+                                                            <option value="未婚" selected>未婚</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">非同住亲友姓名</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="owner2NearestRelativeName" id="owner2NearestRelativeName" value="安 、琪" placeholder="例如：张三">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">非同住亲友手机</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="owner2RelativePhone" id="owner2RelativePhone"  value="18501306571" placeholder="例如：18600120000">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Tab 2 -->
+                        <div id="tab2" class="tab">
+                            <div class="padding-t38"></div>
+                            <div class="content-block-title uploadFiles-font2">
+                                <span class="uf-title-new">门店照片</span>
+                            </div>
+                            <div class="list-block media-list uploadfile-block-new margin-b0">
+                                <ul>
+
+                                    <li class=" border-bottom border-tops uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">门店照片</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">租赁合同(或产权证明)</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=" border-bottom border-tops uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">POS机收银台照</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="content-block-title uploadFile-home-part2">
+                                <span class="uf-title-new">个人信息照片</span>
+                            </div>
+                            <div class="list-block media-list uploadfile-block-new">
+                                <ul>
+                                    <li class=" border-bottom border-tops uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">营业执照</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">身份证</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=" border-bottom border-tops uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">开户许可证/一般户印鉴卡</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">个人借记卡</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=" border-bottom border-tops uploadFiles-height">
+                                        <a href="#" class="item-link item-content">
+                                            <div class="item-inners margin-l0">
+                                                <div class="item-title-row">
+                                                    <div class="item-titles"><img class="thumbnailimg" id="change-pic" src="images/noPic2.png"/></div>
+                                                    <div class="item-title item-title-margin">
+                                                        <div class="uploadFiles-font3">征信报告</div>
+                                                        <div class="padding-t10">0 张</div>
+                                                    </div>
+                                                    <div class="item-after"><span class="badge uploadFiles-font4">1</span></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="myshop.html" class="tab-link">
+                    <i class="icon money-icon"><span class="badge bg-red">1</span></i>
+                    <span class="tabbar-label">融资</span>
+                </a>
+                <a href="myaccount.html" class="tab-link">
+                    <i class="icon account-icon">
+                    </i>
+                    <span class="tabbar-label">账户</span>
+                </a>
+                <a href="more_new.html" class="tab-link active">
+                    <i class="icon more-icon"></i>
+                    <span class="tabbar-label">更多</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/wechat.js"></script>
+<script type="text/javascript">
+    $(window).onscroll=function(){alert('test');}
+</script>
+</body>
+</html>
