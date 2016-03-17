@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar login-title displaynone">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="close-img"><img src="images/icon/left-arror.png"></a></div>
+                <div class="center sliding login-title-word">活动规则</div>
+            </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content regular-back">
+                    <div class="invite-friend">
+                        <div class="invite-friend-inner">
+                            <div class="invite-top">
+                                <img class="invite-topimg" src="images/invite-top-new2.jpg" alt="">
+                                <div class="invite-inner-new">
+                                    <div class="txt">您的好友<span class="inviter">${trueName}</span>邀请您一起成为土豪</div>
+                                    <div class="invite-code">
+                                        <div class="btn-code-label"><div>长按右侧复制邀请码</div></div>
+                                        <div class="btn-code">
+                                            <div>
+                                                <input readonly value="222" class="btn-code2" type="text" focus="false" id="click_copy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button btn-register" id="downloadAppBtn">点我注册，90元优惠券送惊喜</div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/wechat.js"></script>
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+
+<script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+
+<script type="text/javascript">
+
+    var l = $('#click_copy').val().length;
+
+    $(".btn-code").onclick = function(){
+    if($('click_copy').createTextRange){//IE浏览器
+        var range = $('click_copy').createTextRange();
+        range.moveEnd("character",-l)
+        //range.moveStart("character",-l)
+        range.moveEnd("character",l-1);
+        range.moveStart("character", l-1-con.length);
+        range.select();
+    }else{
+        $('click_copy').setSelectionRange(l-1-con.length,l-1);
+        $('click_copy').focus();
+    }
+    };
+//    alert (l);
+
+</script>
+</body>
+</html>

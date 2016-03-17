@@ -1,0 +1,84 @@
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+	
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+    margin-left: -300px;
+    width: 600px;
+    
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+	width: expression(this.parentNode.offsetWidth+'px');
+	height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+.jqmDialog {
+	display: none;
+	font-family: verdana,tahoma,helvetica;
+	left: 50%;
+	margin-left: -280px;
+	overflow: hidden;
+	position: fixed;
+	top: 17%;
+	width: 560px;
+	font-size: 28px;
+}
+
+div.jqmdTC { 
+	background: #ffd700 url(../image/dialog/sprite.gif) repeat-x 0px -82px; 
+	color: #528c00;
+	padding: 7px 22px 5px 5px;
+	font-family:"sans serif",verdana,tahoma,helvetica;
+	font-weight: bold;
+	* zoom: 1;
+}
+div.jqmdTL { background:  url(../image/dialog/sprite.gif) no-repeat 0px -41px; padding-left: 3px;}
+div.jqmdTR { background: url(../image/dialog/sprite.gif) no-repeat right 0px; padding-right: 3px; * zoom: 1;}
+
+
+/* [[[ Body / Message Classes ]]] */
+div.jqmdBC {
+  background: url(../image/dialog/award.jpg) top center;
+  padding: 7px 7px 7px;
+  height: 390px;
+  overflow: auto;
+}
+div.jqmdBC1 {
+  background: url(../image/dialog/bc.gif) repeat-x center bottom;
+  padding: 7px 7px 7px;
+  height: 280px;
+  overflow: auto;
+}
+div.jqmdBL { background: url(../image/dialog/bl.gif) no-repeat left bottom; padding-left: 7px; }
+div.jqmdBR { background: url(../image/dialog/br.gif) no-repeat right bottom; padding-right: 7px; * zoom: 1 }
+
+div.jqmdMSG { 
+ 	color: #FF0000;
+    margin: 90px 0px 0px 180px ;
+    font-size: 80px;
+}
+div.jqmdMSG1 { color: #317895; }

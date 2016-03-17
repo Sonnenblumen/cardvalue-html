@@ -1,0 +1,164 @@
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > figure {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+img {max-width: 100%}
+
+figure, form, fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+.page-swipe section {
+    background-color: #fff;
+    position: relative
+}
+
+.page-swipe section a, .page-swipe section a:visited {
+    color: #2b2e30;
+    font-weight: 700
+}
+
+.page-swipe section a:hover, .page-swipe section a:visited:hover {
+    color: #43484b
+}
+
+.page-swipe section #slider {
+    max-height: 395px;
+}
+.page-swipe section #slider figure {
+    display: block
+}
+
+.page-swipe section #slider figure div.wrap {
+    height: 360px;
+    display: block;
+    margin: 0 auto;
+    position: relative
+}
+
+@media only screen and (max-width: 767px) {
+    .page-swipe section #slider figure div.wrap {
+        max-width: 480px;
+        height: 170px;
+    }
+}
+
+.page-swipe section #slider figure div.image {
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+.page-swipe section #slider figure div.image img{
+    width: inherit;
+}
+.page-swipe section #slider figure a {
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 12px;
+    color: #fff;
+    background: #000;
+    padding: 2px 5px;
+    border-radius: 3px;
+    opacity: .45;
+    font-family: franklin-gothic-urw, sans-serif
+}
+
+.page-swipe section #slider figure a:hover {
+    opacity: .85;
+    text-decoration: none
+}
+
+.page-swipe section nav {
+    width: 100%;
+    height:30px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+@media screen and (min-width: 767px){
+    .page-swipe section nav {height: 60px;}
+}
+.page-swipe section nav a {
+    font-style: normal;
+    color: #555 !important
+}
+
+.page-swipe section nav #position {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+@media screen and (min-width: 767px){
+    .page-swipe section nav #position {height: 60px; line-height: 60px;}
+}
+.page-swipe section nav #position li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #fff;
+    margin: 0 2px;
+    cursor: pointer
+}
+@media screen and (min-width: 767px){
+    .page-swipe section nav #position li{ width: 12px;height: 12px;border-radius: 12px;}
+}
+.page-swipe section nav #position li.on {
+    background-color: #0c96f0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0c96f0), color-stop(100%, #0f6297));
+    background-image: -webkit-linear-gradient(top, #0c96f0, #0f6297);
+    background-image: -moz-linear-gradient(top, #0c96f0, #0f6297);
+    background-image: -ms-linear-gradient(top, #0c96f0, #0f6297);
+    background-image: -o-linear-gradient(top, #0c96f0, #0f6297);
+    background-image: linear-gradient(top, #0c96f0, #0f6297)
+}
+section {
+    text-align: center;
+}
+
+section a, section a:visited {
+    text-decoration: none;
+    color: #c6cacd;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    padding: 7px 15px 5px;
+    font-family: proxima-nova, sans-serif
+}
+
+section a:hover, section a:visited:hover {
+    color: #8c9397;
+    text-decoration: none
+}
+
+section a.logo, section a:visited.logo {
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 8px 13px 7px;
+    border-radius: 25px;
+    background: #14a8e5;
+    letter-spacing: 0
+}

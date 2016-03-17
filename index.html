@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>卡得万利商业保理</title>
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <!--framework7 css-->
+        <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+        <!--main css-->
+        <link rel="stylesheet" href="css/wechat.css">
+    </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-reveal">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page navbar-fixed">
+            <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                  <!-- We have home navbar without left link-->
+                  <div class="center sliding">账号绑定</div>
+                  <div class="right">
+                      <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+                  </div>
+              </div>
+            </div>
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <div class="content-block">
+                    <div class="buttons-row">
+                        <!-- Link to 1st tab, active -->
+                        <a href="#tab1" class="tab-link active button">我是法人</a>
+                        <!-- Link to 2nd tab -->
+                        <a href="#tab2" class="tab-link button">我是代理人</a>
+                    </div>
+                </div>
+                <!-- Tabs, tabs wrapper -->
+                <div class="tabs">
+                    <!-- Tab 1, active by default -->
+                    <div id="tab1" class="tab active">
+                        <div class="content-block">
+                            <div class="list-block login">
+                                <ul>
+                                    <li class="item-content border-bottom">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/phone.png" width="20"></span>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="请输入您的手机号">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-media">
+                                            <span class="pwd_icon"><img src="images/icon/key.png" width="20"></span>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                <input class="login_input" type="password" placeholder="请输入验证码">
+                                                <button class="get_verti button button-round" type="button">获取验证码</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div id="tab2" class="tab">
+                        <div class="content-block">
+                            <div class="list-block login">
+                                <ul>
+                                    <li class="item-content border-bottom">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/phone.png" width="20"></span>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="请输入您的手机号">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content border-bottom">
+                                        <div class="item-media">
+                                            <span class="icon username_icon"><img src="images/icon/phone.png" width="20"></span>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                <input class="login_input" type="text" placeholder="请输入法人的手机号">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-media">
+                                            <span class="pwd_icon"><img src="images/icon/key.png" width="20"></span>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">
+                                                <input class="login_input" type="password" placeholder="请输入验证码">
+                                                <button class="get_verti button button-round" type="button">获取验证码</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padding-rl15">
+                        <div class="margin-t10">
+                            <input id="agree-terms" type="checkbox" checked />
+                            <label for="agree-terms">我同意<a class="open-popup"data-popup=".popup-service" href="#">卡得万利注册条款</a></label>
+                        </div>
+                        <div class="bind-number">
+                            <!--检测到没有勾选同意服务条款时，添加class="disabled"-->
+                            <a class="button button-big button-fill" href="myshop.html">立即绑定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="popup popup-service">
+        <div class="content-block">
+            <p><a href="#" class="close-popup">关闭</a></p>
+            <p>卡得万利服务条款</p>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/wechat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>卡得万利商业保理</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!--framework7 css-->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/wechat.css">
+</head>
+<body>
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+
+        <div class="page-content padding0">
+            <div class="tabs">
+                <div class="container-fluid padding0 align-middle">
+                    <div class="nav-body2">
+                        <div class="xiaoqie-up">
+                            <img src="images/xiaoqie-top.jpg">
+                        </div>
+                        <div class="iphone-up">
+                            <a class="xiaoqie-iphone"><img src="images/iphone.png" data-toggle="modal" data-target="#myModal"></a>
+                        </div>
+
+                        <div class="iphone-bottom">
+                            <a><img src="images/iphone.png" data-toggle="modal" data-target="#myModal"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade top0 " role="dialog" aria-labelledby="gridSystemModalLabel" id="myModal">
+                <div class="modal-dialog modal-penguin" role="document">
+                    <img src="images/shares.png">
+                </div><!-- /.modal-dialog -->
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+<!-- Path to your app js-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+
+<!--<script type="text/javascript">-->
+    <!--var c = $("#xiaoqie").css('display');-->
+    <!--//alert(c);-->
+    <!--if(c=="none"){-->
+        <!--$('.anzhuo-up').css("padding-top","7%");-->
+    <!--}-->
+<!--</script>-->
+
+<script type="text/javascript">
+    $('#myModal').on('show.bs.modal', function (e) {
+        // do something...
+        //alert("ddddd");
+        $('.page-content').addClass("modal-forbidden");
+    })
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // do something...
+        //alert("ddddd");
+        $('.page-content').removeClass("modal-forbidden");
+    })
+
+    $('#myModal').click(function(){
+        $('#myModal').modal('toggle')
+    });
+</script>
+
+</body>
+</html>

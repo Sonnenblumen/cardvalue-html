@@ -1,0 +1,33 @@
+*{margin:0;padding:0}
+		a,img{border:0;}
+		body{font:12px/180% "Microsoft Yahei",Arial, Helvetica, sans-serif, "ÐÂËÎÌå"; overflow-x:hidden; background:url(../image/rotary/bg.jpg) no-repeat; background-size:cover;}
+		.fl{ float:left;}
+		.fr{ float:right;}
+		.tc{ text-align: center;}
+		.header{ margin-bottom:10px;}
+		.header .timesBg{ background:url(../image/rotary/rotarytimesbgsmall.png) no-repeat; display:inline-block; width:63px; height:58px; line-height:58px; color:#f6ff04; font-size:40px;  font-family:Impact;}
+		.rotary{position:relative;width:100%;margin:0 auto;}
+		.rotaryArrow{position:absolute;cursor:pointer;}
+		.rotaryTable{text-align:center;}
+		
+		.result{display:none;position:absolute;left:5%;top:20%;width:90%; z-index:3; min-width:265px;}
+		.tips{display:none;position:absolute;left:10%;top:20%;width:80%; z-index:3}
+		.rotaryBg{display:none;position:absolute;left:0;top:0; width:100%; background-color:rgba(0,0,0,0.75);filter:alpha(opacity=56); opacity:0.56; z-index:2}
+		.rotaryHead{ position:relative; z-index:5}
+		.resultBody{ background-color:#fef9dc; border-radius:5px; padding:10px 20px; position:relative; z-index:6; margin-top:-10px;}
+		
+		a#resultBtn{position:absolute;right:10px;top:10px;width:20px;height:20px;text-indent:-100px;background-image:url(../image/rotary/close.png);overflow:hidden;}
+		a#tipsBtn{position:absolute;right:10px;top:5px;width:20px;height:20px;text-indent:-100px;background-image:url(../image/rotary/close.png);overflow:hidden;}
+		.resultBody p{font-size:18px;text-align:center; color:#c20101; line-height:28px;}
+		.resultBody p span{font-size:30px; font-weight:700; padding:0 5px; font-family:Arial, Helvetica, sans-serif; color:#f32200£»}
+		.resultBody a{ color:#fff600; background:url(../image/rotary/btn.png) center no-repeat; width:110px; height:40px; line-height:40px; display:inline-block; text-align: center; text-decoration:none; font-size:20px;}
+		.result em{color:#ffea76;font-style:normal;}
+		
+		.instructions{  margin:20px 0; padding:0 20px;}
+		.instructions .content{ background-color:#ffe483; border-radius:5px;padding: 15px 20px;}
+		.instructions .content h2{color:#b3002a; font-weight:normal; font-size:30px; margin-bottom:20px; }
+		.instructions .content p { font-size:16px; line-height:27px;}
+		.instructions .content p span,.instructions .content p sup{ color:#b3002a;}
+		.instructions .content p span:first-child{ width:110px; display:inline-block; color:#000;}
+		.instructions .content p span a{ color:#ffe784; font-size:14px; background-color:#ca0030; border-radius:5px; padding:2px 5px; text-decoration:none; margin: 0 4px;}
+		.instructions .lines{ height:1px; background-color:#f0b271; margin:10px 0;}

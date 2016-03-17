@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no">
+    <title>卡得万利</title>
+    <link rel="stylesheet" href="css/wechat.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/Lottery.js"></script>
+</head>
+<body>
+
+<div class="total-pages">
+
+    <div class="price-top">
+        <img src="images/price-title.jpg">
+    </div>
+
+
+
+    <div class="price-chest-top" id="price-chest-top">
+        <img src="images/chestTop.png">
+    </div>
+
+    <div class="price-chest-bottom">
+        <img src="images/chestBottom.png">
+    </div>
+
+    <div class="price-lottery">
+        <div class="price-lottery-font1">您还有<span class="price-lottery-font2">0</span>次机会</div>
+        <div id="lotteryContainer"></div>
+    </div>
+
+    <div class="price-bottom">
+        <div class="price-regulars">
+            <ul class="price-regulars-fonts1">
+                <li class="no-list-style">活动时间： 2015年12月25日-2016年3月24日</li>
+                <li class="no-list-style">活动对象：全体银联商户客户经理</li>
+            </ul>
+            <ul class="price-regulars-fonts">
+                <li class="padding-t10">活动期间放款金额累计排名前十，即可获得Apple Ipad Pro 一台。<br>奖品价值：<br>排名1-3：价值7888 Ipad Pro一台 * 3<br>排名4-10：价值5888 Ipad Pro一台 * 7<br/><span class="price-regulars-font2">（活动期间累计放款65万元以上)</span></li>
+                <li class="padding-t10">客户经理通过微信端提交线索，每提交1条有效线索即可获得1次刮奖机会。100%中奖!<br>奖品随机，包含：<br>价值300~3000元随机实物福袋<br>价值 5~100元随机积分</li>
+
+            </ul>
+        </div>
+        <div class="price-check-recorder">
+            <button class="price-button box-shadow-1" id="price-button">获奖记录</button>
+        </div>
+        <div class="price-footer">
+            <span>本活动解释权归卡得万利商业保理（上海）有限公司所有</span>
+        </div>
+    </div>
+
+    <div class="price-award displaynone">
+        <div class="price-award-content">
+            <img src="images/priceAward.png">
+            <div class="price-award-font1">
+                <span>恭喜您中了<span class="price-award-font2">一等奖</span>哦 ！</span>
+            </div>
+            <div>
+                <button class="price-award-button">点击领取</button>
+            </div>
+        </div>
+        <div class="price-award-close" id="price-award-close">
+            <img src="images/priceClose.png">
+        </div>
+    </div>
+
+    <div class="price-check-recorder-content displaynone">
+        <div class="price-recorder-close" id="price-recorder-close">
+            <img src="images/priceClose.png">
+        </div>
+        <div class="price-recorder-title">
+            <img src="images/price-recorder.png">
+        </div>
+        <div class="price-recorder-recorder">
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+            <div class="recorder-content">
+                <div class="float_l recorder-font1">2015-12-17</div>
+                <div class="float_l recorder-font2">14:08</div>
+                <div class="float_l recorder-font3">iPhone6s一部</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var windowWidth = window.innerWidth;
+    window.onload = function () {
+//        $('body').width(windowWidth);
+        var lottery = new Lottery('lotteryContainer', 'images/priceCover.jpg', 'image', 192, 40, drawPercent);
+        lottery.init('images/award/1.jpg', 'image');
+
+        var drawPercentNode = document.getElementById('drawPercent');
+
+        function drawPercent(percent) {
+//            if(percent<30){
+//                lottery.init('images/award/3.jpg', 'image');
+//            }
+            if(percent>60){
+                $('#price-chest-top').addClass('price-moves');
+                $('body').addClass('price-scroll');
+                setTimeout(function(){$('.price-award').removeClass('displaynone').addClass('price-scale');},2000);
+            }
+        }
+    }
+
+    $('#price-award-close').click(function(){
+        $('.price-award').addClass('displaynone');
+        window.location.reload();
+    })
+
+    $('#price-button').click(function(){
+        $('.price-check-recorder-content').removeClass('displaynone');
+        $('body').addClass('price-scroll');
+    })
+
+    $('#price-recorder-close').click(function(){
+        $('.price-check-recorder-content').addClass('displaynone');
+        $('body').removeClass('price-scroll');
+//        window.location.reload();
+    })
+</script>
+
+</body>
+</html>

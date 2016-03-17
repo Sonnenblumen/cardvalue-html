@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>卡得万利商业保理</title>
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <!--framework7 css-->
+        <link rel="stylesheet" href="lib/framework7/css/framework7.css">
+        <!--main css-->
+        <link rel="stylesheet" href="css/wechat.css">
+    </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar login-title">
+          <div class="navbar-inner">
+              <div class="left"><a href="#" class="close-img"><img src="images/icon/left-arror.png"> </a></div>
+              <div class="center sliding login-title-word">注册</div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="login" class="page">
+            
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <div class="content-block login-new">
+                    <div class="list-block register-home">
+                        <ul>
+                            <li class="item-content border-bottom border-tops">
+                                <div class="item-media">
+                                    <span class="icon username_icon"><img src="images/icon/user.png"></span>
+                                </div>
+                                <div class="item-inners">
+                                    <div class="item-title">
+                                        <input class="login_input" type="text" placeholder="手机号">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content border-bottom">
+                                <div class="item-media">
+                                    <span class="icon username_icon pinCode"><img src="images/icon/key.png"></span>
+                                </div>
+                                <div class="item-inners">
+                                    <div class="item-title">
+                                        <input class="login_input" type="text" placeholder="验证码">
+                                        <button class="get_verti-new button button-round" type="button">获取验证码</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content border-bottom">
+                                <div class="item-media">
+                                    <span class="icon username_icon"><img src="images/icon/pinCode.png"></span>
+                                </div>
+                                <div class="item-inners">
+                                    <div class="item-title">
+                                        <input class="login_input" type="text" placeholder="初始密码">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="register-home-part2">
+                            <li class="item-content border-bottom border-tops">
+                                <div class="item-media">
+                                    <span class="icon username_icon"></span>
+                                </div>
+                                <div class="item-inners">
+                                    <div class="item-title">
+                                        <input class="login_input" type="text" placeholder="邀请码">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="padding-rl15 margin-t-5">
+                    <div class="margin-b15 register-font1">
+                        <input id="agree-terms" type="checkbox" checked />
+                    </div>
+                    <div id="agree-terms-font">
+                        <label for="agree-terms">同意<a class="open-popup" data-popup=".popup-service" href="#">卡得万利注册协议</a>和<a class="open-popup">隐私协议</a></label>
+                    </div>
+                    <div class="bind-number-new">
+                        <!--检测到没有勾选同意服务条款时，添加class="disabled"-->
+                        <a class="button button-big button-fill apply-button" href="#">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="popup popup-service">
+        <div class="content-block">
+            <p><a href="#" class="close-popup">关闭</a></p>
+            <p>卡得万利服务条款</p>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/wechat.js"></script>
+  </body>
+</html>
